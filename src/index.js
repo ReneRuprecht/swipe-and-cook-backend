@@ -6,6 +6,8 @@ const mongoose = require('mongoose');
 
 // user
 const userRoutes = require('./user/route/user.route');
+// register
+const registerroutes = require('./registration/route/registration.route');
 
 app.use(express.json());
 
@@ -24,6 +26,10 @@ db.once('open', () => {
 
 // user route
 app.use('/api/v1/user', userRoutes);
+
+// registration route
+app.use('/api/v1/register', registerroutes);
+
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
