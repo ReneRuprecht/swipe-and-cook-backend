@@ -1,0 +1,15 @@
+GET http://localhost:5000/api/v1/user/
+Content-Type: application/json
+
+{
+    "email":"testmail121344c41"
+}
+###
+
+POST http://localhost:5000/api/v1/user/
+Content-Type: application/json
+
+{
+    "email":"testmail121344c41",
+    "password":"paw1s"
+}
